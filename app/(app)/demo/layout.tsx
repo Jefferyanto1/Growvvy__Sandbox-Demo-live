@@ -61,7 +61,7 @@ export default function DemoLayout({
   <div className="h-[80px] flex items-center">
     <div className="flex items-center gap-2">
       <img
-        src="/Growvvylogo.svg"
+        src="/growvvylogo.svg"
         className="h-43 w-148"
         alt="Growvvy logo"
       />
