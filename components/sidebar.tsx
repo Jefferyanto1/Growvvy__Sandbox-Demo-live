@@ -1,7 +1,5 @@
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import { useCurrentUser } from '@/hooks/use-current-user'
-import { signOut } from 'next-auth/react'
 import Image from 'next/image'
 import { ModeToggle } from '@/components/mode-toggle'
 import { Logo } from '@/components/logo'
@@ -53,10 +51,8 @@ interface SidebarProps {
 }
 
 export const Sidebar = ({ closeSidebar }: SidebarProps) => {
-  const session = useCurrentUser()
-  const Logout = () => {
-    signOut()
-  }
+  const session = null
+  const Logout =  () => {}
   return (
     <div className="flex flex-col justify-between pl-2">
       <Link href="/" onClick={closeSidebar}>
