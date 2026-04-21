@@ -21,27 +21,7 @@ const [isScratchBuilderOpen, setIsScratchBuilderOpen] = useState(false);
 const [ruleName, setRuleName] = useState("");
 
 /* ---------- AUTOMATION_ACTIVITY_STATE ---------- */
-const [automations, setAutomations] = useState<any[]>([
-    {
-      id: "auto-1",
-      name: "Comment → DM → Follow-up",
-      status: "running",
-      trigger: "Comment on Post",
-      scope: "All Profile Posts",
-      specific: "",
-      steps: ["Send DM", "Wait", "Send DM"],
-      createdAt: "Apr 11, 2026, 10:30 AM",
-      pausedAt: "",
-      stoppedAt: "",
-      resumedAt: "",
-      timeline: [],
-      results: {
-        messagesSent: 18,
-        leadsGenerated: 12,
-        replies: 5
-      }
-    }
-  ])
+const [automations, setAutomations] = useState<any[]>([])
 const [selectedAutomationId, setSelectedAutomationId] = useState<string | null>(null)
 const [automationTab, setAutomationTab] = useState<"active" | "paused">("active")
 const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null)
